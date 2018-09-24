@@ -45,6 +45,7 @@ class WeatherProvider(object):
         result['lon'] = float(c.get('lon'))
         result['clouds'] = c.get('clouds')
         result['temp'] = c.get('temp')
+        result['hum'] = c.get('rh')
         result['press'] = c.get('pres')
         result['wind_spd'] = c.get('wind_spd')
         result['wind_deg'] = c.get('wind_dir')
