@@ -44,13 +44,15 @@ w.set_provider('darksky')
 w.key = 'my secret api key'
 w.set_location(lat=50.08804, lon=14.42076)
 
-# below sets the same location 
+# the code below sets the same location, but DarkSky supports only coordinates,
+# so we use them instead
+
 # w.set_location(city_id=3067696)
 # w.set_location(city='Prague', country='CZ')
+
 # w.lang = 'cs'
 
 print(w.get_current())
-
 ```
 
 (c) 2018 Altertech Group, https://www.altertech.com/
