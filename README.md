@@ -22,9 +22,9 @@ Provides current weather information as an unified dict:
 * uv: UV index
 * icon: icon code (provider specific)
 * description: human readable weather description
-* percip_type: percip type
-* percip_prob: percip probability (%)
-* percip_int: percip intensity
+* precip_type: precip type
+* precip_prob: precip probability (%)
+* precip_int: precip intensity
 * sunrise: HH:mm
 * sunset: HH:mm
 
@@ -35,6 +35,7 @@ set to None.
 
 The module contains providers for:
 
+ * weatherbit: https://www.weatherbit.io/
  * darksky: https://darksky.net/
  
 Usage example:

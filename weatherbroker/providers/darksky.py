@@ -52,7 +52,7 @@ class WeatherProvider(object):
         result['description'] = c.get('summary')
         result['sunrise'] = None
         result['sunset'] = None
-        result['percip_type'] = c.get('precipType')
-        result['percip_prob'] = c.get('precipProbability')
-        result['percip_int'] = c.get('precipIntensity')
+        result['precip_type'] = c.get('precipType')
+        result['precip_prob'] = c.get('precipProbability')
+        result['precip_int'] = c.get('precipIntensity')
         return result
