@@ -6,9 +6,9 @@ License: Apache License 2.0
 Warning: Refer to weather provider license about caching, storing and
 redistributing weather information.
 
-Displays current weather condition in unified JSON format:
+Provides current weather information as an unified dict:
 
-* time: unix timestamp
+* time: monitoring time, unix timestamp
 * lat: latitude
 * lon: longitude
 * clouds (%)
@@ -29,6 +29,9 @@ Displays current weather condition in unified JSON format:
 * sunset: HH:mm
 
 Weather forecast is not implemented (yet).
+
+Note: some providers may not provide certain data fields, in this case they are
+set to None.
 
 The module contains providers for:
 
