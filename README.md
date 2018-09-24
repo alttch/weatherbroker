@@ -32,7 +32,7 @@ Weather forecast is not implemented (yet).
 
 The module contains providers for:
 
- * DarkSky: https://darksky.net/
+ * darksky: https://darksky.net/
  
 Usage example:
  
