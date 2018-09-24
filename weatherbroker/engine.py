@@ -105,7 +105,7 @@ class Engine(object):
             clouds (%)
             temp: temperature
             hum: humidity (%)
-            press: pressure
+            pres: pressure
             wind_spd: wind speed
             wind_deg: wind degree
             vis: visibility

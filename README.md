@@ -14,7 +14,7 @@ Provides current weather information as an unified dict:
 * clouds (%)
 * temp: temperature
 * hum: humidity (%)
-* press: pressure
+* pres: pressure
 * wind_spd: wind speed
 * wind_deg: wind degree
 * vis: visibility
