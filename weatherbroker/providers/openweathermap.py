@@ -14,7 +14,8 @@ import datetime
 class WeatherProvider(object):
 
     def get_current(self, key, location, units=None, lang=None, timeout=5):
-        url = 'https://api.openweathermap.org/data/2.5/weather?APPID={}'.format(key)
+        url = 'https://api.openweathermap.org/data/2.5/weather?APPID={}'.format(
+            key)
         if units == 'us':
             url += '&units=imperial'
         else:
@@ -48,7 +49,7 @@ class WeatherProvider(object):
         result['pres'] = main.get('pressure')
         result['wind_spd'] = data.get('wind', {}).get('speed')
         result['wind_deg'] = data.get('wind', {}).get('deg')
-        result['vis'] = data.get('visibility', 0) / 1000.0 
+        result['vis'] = data.get('visibility', 0) / 1000.0
         result['dewp'] = None
         result['uv'] = None
         weather = data.get('weather')

@@ -35,6 +35,7 @@ set to None.
 
 The module contains providers for:
 
+ * openweathermap: https://openweathermap.org/
  * weatherbit: https://www.weatherbit.io/
  * darksky: https://darksky.net/
  
