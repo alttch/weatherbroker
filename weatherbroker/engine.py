@@ -1,7 +1,7 @@
 __author__ = "Altertech Group, https://www.altertech.com/"
 __copyright__ = "Copyright (C) 2018 Altertech Group"
 __license__ = "Apache License 2.0"
-__version__ = "0.0.1"
+__version__ = "0.0.2"
 
 import importlib
 import logging
@@ -94,8 +94,11 @@ class Engine(object):
         self._log_debug('provider set: %s' % provider)
         return True
 
-    def get_current(self):
+    def get_current(self, **kwargs):
         """Get current weather
+
+        Args:
+            timeout: override default timeout
 
         Returns JSON array with fields:
 
@@ -122,8 +125,9 @@ class Engine(object):
         Raises:
             provider exceptions
         """
+        timeout = kwargs.get('timeout', self.timeout)
         return self.provider.get_current(self.key, self.location, self.units,
-                                         self.lang, self.timeout)
+                                         self.lang, timeout)
 
     def get_forecast(self, **kwargs):
         """Get weather forecast
