@@ -6,6 +6,8 @@ __version__ = "0.0.2"
 import importlib
 import logging
 
+logger = logging.getLogger(__name__)
+
 
 class WBLocation(object):
 
@@ -140,9 +142,9 @@ class Engine(object):
 
     @staticmethod
     def _log_debug(msg):
-        logging.debug('weatherbroker: %s' % msg)
+        logger.debug(msg)
 
     @staticmethod
     def _log_error(msg, raise_exception=True):
-        logging.error('weatherbroker: %s' % msg)
+        logger.error(msg)
         if raise_exception: raise Exception(msg)
